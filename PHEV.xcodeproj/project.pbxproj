@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2513F9B61DC9447E006B52B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2513F9B51DC9447E006B52B8 /* AppDelegate.swift */; };
+		2513F9B81DC9447E006B52B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2513F9B71DC9447E006B52B8 /* ViewController.swift */; };
+		2513F9BB1DC9447E006B52B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2513F9B91DC9447E006B52B8 /* Main.storyboard */; };
+		2513F9BD1DC9447E006B52B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2513F9BC1DC9447E006B52B8 /* Assets.xcassets */; };
+		2513F9C01DC9447E006B52B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2513F9BE1DC9447E006B52B8 /* LaunchScreen.storyboard */; };
+		2513F9CB1DC9447F006B52B8 /* PHEVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2513F9CA1DC9447F006B52B8 /* PHEVTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2513F9C71DC9447F006B52B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2513F9AA1DC9447E006B52B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2513F9B11DC9447E006B52B8;
+			remoteInfo = PHEV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2513F9B21DC9447E006B52B8 /* PHEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2513F9B51DC9447E006B52B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2513F9B71DC9447E006B52B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2513F9BA1DC9447E006B52B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2513F9BC1DC9447E006B52B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2513F9BF1DC9447E006B52B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2513F9C11DC9447E006B52B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2513F9C61DC9447F006B52B8 /* PHEVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHEVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2513F9CA1DC9447F006B52B8 /* PHEVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHEVTests.swift; sourceTree = "<group>"; };
+		2513F9CC1DC9447F006B52B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2513F9AF1DC9447E006B52B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2513F9C31DC9447F006B52B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2513F9A91DC9447E006B52B8 = {
+			isa = PBXGroup;
+			children = (
+				2513F9B41DC9447E006B52B8 /* PHEV */,
+				2513F9C91DC9447F006B52B8 /* PHEVTests */,
+				2513F9B31DC9447E006B52B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2513F9B31DC9447E006B52B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2513F9B21DC9447E006B52B8 /* PHEV.app */,
+				2513F9C61DC9447F006B52B8 /* PHEVTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2513F9B41DC9447E006B52B8 /* PHEV */ = {
+			isa = PBXGroup;
+			children = (
+				2513F9B51DC9447E006B52B8 /* AppDelegate.swift */,
+				2513F9B71DC9447E006B52B8 /* ViewController.swift */,
+				2513F9B91DC9447E006B52B8 /* Main.storyboard */,
+				2513F9BC1DC9447E006B52B8 /* Assets.xcassets */,
+				2513F9BE1DC9447E006B52B8 /* LaunchScreen.storyboard */,
+				2513F9C11DC9447E006B52B8 /* Info.plist */,
+			);
+			path = PHEV;
+			sourceTree = "<group>";
+		};
+		2513F9C91DC9447F006B52B8 /* PHEVTests */ = {
+			isa = PBXGroup;
+			children = (
+				2513F9CA1DC9447F006B52B8 /* PHEVTests.swift */,
+				2513F9CC1DC9447F006B52B8 /* Info.plist */,
+			);
+			path = PHEVTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2513F9B11DC9447E006B52B8 /* PHEV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2513F9CF1DC9447F006B52B8 /* Build configuration list for PBXNativeTarget "PHEV" */;
+			buildPhases = (
+				2513F9AE1DC9447E006B52B8 /* Sources */,
+				2513F9AF1DC9447E006B52B8 /* Frameworks */,
+				2513F9B01DC9447E006B52B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PHEV;
+			productName = PHEV;
+			productReference = 2513F9B21DC9447E006B52B8 /* PHEV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2513F9C51DC9447F006B52B8 /* PHEVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2513F9D21DC9447F006B52B8 /* Build configuration list for PBXNativeTarget "PHEVTests" */;
+			buildPhases = (
+				2513F9C21DC9447F006B52B8 /* Sources */,
+				2513F9C31DC9447F006B52B8 /* Frameworks */,
+				2513F9C41DC9447F006B52B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2513F9C81DC9447F006B52B8 /* PBXTargetDependency */,
+			);
+			name = PHEVTests;
+			productName = PHEVTests;
+			productReference = 2513F9C61DC9447F006B52B8 /* PHEVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2513F9AA1DC9447E006B52B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Claire Sonderman";
+				TargetAttributes = {
+					2513F9B11DC9447E006B52B8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					2513F9C51DC9447F006B52B8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2513F9B11DC9447E006B52B8;
+					};
+				};
+			};
+			buildConfigurationList = 2513F9AD1DC9447E006B52B8 /* Build configuration list for PBXProject "PHEV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2513F9A91DC9447E006B52B8;
+			productRefGroup = 2513F9B31DC9447E006B52B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2513F9B11DC9447E006B52B8 /* PHEV */,
+				2513F9C51DC9447F006B52B8 /* PHEVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2513F9B01DC9447E006B52B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2513F9C01DC9447E006B52B8 /* LaunchScreen.storyboard in Resources */,
+				2513F9BD1DC9447E006B52B8 /* Assets.xcassets in Resources */,
+				2513F9BB1DC9447E006B52B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2513F9C41DC9447F006B52B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2513F9AE1DC9447E006B52B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2513F9B81DC9447E006B52B8 /* ViewController.swift in Sources */,
+				2513F9B61DC9447E006B52B8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2513F9C21DC9447F006B52B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2513F9CB1DC9447F006B52B8 /* PHEVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2513F9C81DC9447F006B52B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2513F9B11DC9447E006B52B8 /* PHEV */;
+			targetProxy = 2513F9C71DC9447F006B52B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2513F9B91DC9447E006B52B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2513F9BA1DC9447E006B52B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2513F9BE1DC9447E006B52B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2513F9BF1DC9447E006B52B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2513F9CD1DC9447F006B52B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2513F9CE1DC9447F006B52B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2513F9D01DC9447F006B52B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PHEV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PHEV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2513F9D11DC9447F006B52B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PHEV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PHEV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2513F9D31DC9447F006B52B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PHEVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PHEVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PHEV.app/PHEV";
+			};
+			name = Debug;
+		};
+		2513F9D41DC9447F006B52B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PHEVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PHEVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PHEV.app/PHEV";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2513F9AD1DC9447E006B52B8 /* Build configuration list for PBXProject "PHEV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2513F9CD1DC9447F006B52B8 /* Debug */,
+				2513F9CE1DC9447F006B52B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2513F9CF1DC9447F006B52B8 /* Build configuration list for PBXNativeTarget "PHEV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2513F9D01DC9447F006B52B8 /* Debug */,
+				2513F9D11DC9447F006B52B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2513F9D21DC9447F006B52B8 /* Build configuration list for PBXNativeTarget "PHEVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2513F9D31DC9447F006B52B8 /* Debug */,
+				2513F9D41DC9447F006B52B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2513F9AA1DC9447E006B52B8 /* Project object */;
+}
