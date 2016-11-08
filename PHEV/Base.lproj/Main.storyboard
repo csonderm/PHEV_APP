@@ -1,14 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YZt-Mm-z44">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Touch ID Demo-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PHEV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,69 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC1-pY-wmK">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wBL-n5-SBv"/>
+                                </constraints>
+                                <state key="normal" title="Authenticate"/>
+                                <connections>
+                                    <action selector="beginTouchIDAuthCheck:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LT3-o7-Vsy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authentication Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysc-3l-Llg">
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="&quot;&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bum-O0-xSD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="218" id="L8q-rP-GrN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ysc-3l-Llg" firstAttribute="centerX" secondItem="NC1-pY-wmK" secondAttribute="centerX" id="2IT-Nj-ci3"/>
+                            <constraint firstItem="NC1-pY-wmK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="164" id="4gT-5b-0uz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bum-O0-xSD" secondAttribute="bottom" constant="104" id="XF9-F2-zdG"/>
+                            <constraint firstItem="bum-O0-xSD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jcB-Yx-Xz3"/>
+                            <constraint firstItem="ysc-3l-Llg" firstAttribute="top" secondItem="NC1-pY-wmK" secondAttribute="bottom" constant="35" id="mVn-FV-WQe"/>
+                            <constraint firstItem="NC1-pY-wmK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="pdV-JO-vOS"/>
+                            <constraint firstItem="ysc-3l-Llg" firstAttribute="centerX" secondItem="bum-O0-xSD" secondAttribute="centerX" id="wV2-V2-9kd"/>
+                            <constraint firstItem="ysc-3l-Llg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="wcN-Xn-RgZ"/>
+                            <constraint firstItem="bum-O0-xSD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="y3W-Zp-Ku5"/>
+                            <constraint firstItem="bum-O0-xSD" firstAttribute="top" secondItem="ysc-3l-Llg" secondAttribute="bottom" constant="32" id="yfL-fL-aB1"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Touch ID Demo" id="eTb-wc-O8S"/>
+                    <connections>
+                        <outlet property="AuthResultLbl" destination="ysc-3l-Llg" id="Dbb-Iv-4FR"/>
+                        <outlet property="lblAuthResult" destination="bum-O0-xSD" id="1FV-9j-lZM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wW9-K3-J1m">
+            <objects>
+                <navigationController id="YZt-Mm-z44" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s6z-jk-HPO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="v6R-XG-8qD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f87-K8-RTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-832" y="812"/>
         </scene>
     </scenes>
 </document>
