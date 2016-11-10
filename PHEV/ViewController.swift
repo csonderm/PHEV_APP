@@ -21,12 +21,13 @@ class ViewController: UIViewController {
     @IBAction func beginTouchIDAuthCheck(_ sender: AnyObject) {
         let authContext:LAContext = LAContext()
         var error:NSError?
+    
         
         //Is Touch ID hardware available & configured?
         if(authContext.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error:&error))
         {
             //Perform Touch ID auth
-            authContext.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Testing Touch ID", reply: {(wasSuccessful:Bool, error:NSError?) in
+            authContext.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Testing Touch ID", reply: {(wasSuccessful:Bool, error:Error?) -> Void in
                 
                 if(wasSuccessful)
                 {
@@ -38,9 +39,8 @@ class ViewController: UIViewController {
                     //There are a few reasons why it can fail, we'll write them out to the user in the label
                     self.writeOutAuthResult(authError: error)
                 }
-                
-            } as! (Bool, Error?) -> Void)
-            
+ 
+            } )
         }
         else
         {
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     }
     
 
-    func writeOutAuthResult(authError:NSError?)
+    func writeOutAuthResult(authError:Error?)
     {
         DispatchQueue.main.async {
             if let possibleError = authError
