@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250FC1A21DD52A950027213D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1A11DD52A950027213D /* HomeViewController.swift */; };
+		250FC1A41DD52AAB0027213D /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1A31DD52AAB0027213D /* VehicleViewController.swift */; };
+		250FC1A61DD52ABA0027213D /* EtronViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1A51DD52ABA0027213D /* EtronViewController.swift */; };
+		250FC1A81DD52AC80027213D /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1A71DD52AC80027213D /* TripViewController.swift */; };
+		250FC1AA1DD52AD90027213D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1A91DD52AD90027213D /* SettingsViewController.swift */; };
 		2513F9B61DC9447E006B52B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2513F9B51DC9447E006B52B8 /* AppDelegate.swift */; };
 		2513F9B81DC9447E006B52B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2513F9B71DC9447E006B52B8 /* ViewController.swift */; };
 		2513F9BB1DC9447E006B52B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2513F9B91DC9447E006B52B8 /* Main.storyboard */; };
@@ -26,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		250FC1A11DD52A950027213D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		250FC1A31DD52AAB0027213D /* VehicleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
+		250FC1A51DD52ABA0027213D /* EtronViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtronViewController.swift; sourceTree = "<group>"; };
+		250FC1A71DD52AC80027213D /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
+		250FC1A91DD52AD90027213D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		2513F9B21DC9447E006B52B8 /* PHEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2513F9B51DC9447E006B52B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2513F9B71DC9447E006B52B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +93,11 @@
 				2513F9BC1DC9447E006B52B8 /* Assets.xcassets */,
 				2513F9BE1DC9447E006B52B8 /* LaunchScreen.storyboard */,
 				2513F9C11DC9447E006B52B8 /* Info.plist */,
+				250FC1A11DD52A950027213D /* HomeViewController.swift */,
+				250FC1A31DD52AAB0027213D /* VehicleViewController.swift */,
+				250FC1A51DD52ABA0027213D /* EtronViewController.swift */,
+				250FC1A71DD52AC80027213D /* TripViewController.swift */,
+				250FC1A91DD52AD90027213D /* SettingsViewController.swift */,
 			);
 			path = PHEV;
 			sourceTree = "<group>";
@@ -201,7 +216,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2513F9B81DC9447E006B52B8 /* ViewController.swift in Sources */,
+				250FC1A41DD52AAB0027213D /* VehicleViewController.swift in Sources */,
+				250FC1AA1DD52AD90027213D /* SettingsViewController.swift in Sources */,
 				2513F9B61DC9447E006B52B8 /* AppDelegate.swift in Sources */,
+				250FC1A81DD52AC80027213D /* TripViewController.swift in Sources */,
+				250FC1A61DD52ABA0027213D /* EtronViewController.swift in Sources */,
+				250FC1A21DD52A950027213D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
