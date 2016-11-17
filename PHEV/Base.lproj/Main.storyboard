@@ -83,7 +83,7 @@
                         <viewControllerLayoutGuide type="top" id="dbJ-Iu-B95"/>
                         <viewControllerLayoutGuide type="bottom" id="tvO-0N-Lxy"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0sB-bX-HEy">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="VehicleViewController" id="0sB-bX-HEy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -111,7 +111,7 @@
                         <viewControllerLayoutGuide type="top" id="2S6-YI-yen"/>
                         <viewControllerLayoutGuide type="bottom" id="v3T-zM-vW0"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MJo-xD-B8p">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="TripViewController" id="MJo-xD-B8p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -139,7 +139,7 @@
                         <viewControllerLayoutGuide type="top" id="fNQ-Od-B1k"/>
                         <viewControllerLayoutGuide type="bottom" id="PcV-xc-WjP"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0z9-fc-EH7">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="EtronViewController" id="0z9-fc-EH7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -176,7 +176,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration" hint="Account#"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <userDefinedRuntimeAttributes>
@@ -206,7 +206,9 @@
                                         <fragment content="Forgot Pin?">
                                             <attributes>
                                                 <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <font key="NSFont" size="15" name=".SFNSText"/>
+                                                <font key="NSOriginalFont" size="15" name=".SFNSText"/>
+                                                <integer key="NSUnderline" value="1"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -222,15 +224,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fA-rd-aa3">
-                                <frame key="frameInset" minX="63" minY="448" width="249" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="LoginButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fA-rd-aa3">
+                                <frame key="frameInset" minX="63" minY="446" width="249" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="viX-W3-WqW" kind="show" id="MIw-E8-Xne"/>
+                                    <action selector="LoginButton:" destination="9ft-Jn-Zt4" eventType="touchUpInside" id="2hu-KM-3Ss"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -238,7 +240,9 @@
                     </view>
                     <connections>
                         <outlet property="AccountTextField" destination="Bmp-1R-y67" id="4m7-sk-Hdr"/>
+                        <outlet property="LoginButton" destination="3fA-rd-aa3" id="DI6-Xm-NZf"/>
                         <outlet property="PinTextField" destination="grm-hy-OgL" id="lUG-C0-GgS"/>
+                        <segue destination="viX-W3-WqW" kind="show" identifier="LoginSegue" id="kAf-Uo-hNf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fU5-iO-QvS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -253,7 +257,7 @@
                         <viewControllerLayoutGuide type="top" id="cdR-Rm-cHi"/>
                         <viewControllerLayoutGuide type="bottom" id="RcJ-n6-mT3"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7aC-eN-jd5">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="SettingsViewController" id="7aC-eN-jd5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -281,7 +285,7 @@
                         <viewControllerLayoutGuide type="top" id="kxv-Wz-VDB"/>
                         <viewControllerLayoutGuide type="bottom" id="hCj-CT-KOh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kLg-pV-ZUX">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="HomeviewController" id="kLg-pV-ZUX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -341,6 +345,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1Zw-OB-FKz"/>
+        <segue reference="kAf-Uo-hNf"/>
     </inferredMetricsTieBreakers>
 </document>
