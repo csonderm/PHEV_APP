@@ -7,15 +7,33 @@
 //
 
 import UIKit
+import QuartzCore
 
 class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated: false)
-
-        // Do any additional setup after loading the view.
+        //self.navigationItem.setHidesBackButton(true, animated: false)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"BackgroundOption-2.png")!)
+        self.AccountTextField.layer.borderColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
+        self.AccountTextField.layer.borderWidth = 1.0
+        self.AccountTextField.layer.cornerRadius = 5.0
+        self.AccountTextField.layer.masksToBounds = true
+        
+        self.PinTextField.layer.borderColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
+        self.PinTextField.layer.borderWidth = 1.0
+        self.PinTextField.layer.cornerRadius = 5.0
+        self.PinTextField.layer.masksToBounds = true
+        
+        //self.LoginButton.layer.borderColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
+        //self.LoginButton.layer.borderWidth = 1.0
+        //self.LoginButton.layer.cornerRadius = 5.0
+        
+        
     }
+    
+   
+   // @IBOutlet weak var LoginButton: UIButton!
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

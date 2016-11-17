@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"BackgroundOption-2.png")!)    }
     
     @IBOutlet weak var AuthResultLbl: UILabel!
     
@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         {
             //Missing the hardware or Touch ID isn't configured
             self.writeOutAuthResult(authError: error)
+            self.performSegue(withIdentifier: "regularLoginSegue", sender: self)
         }    }
 
     @IBOutlet weak var lblAuthResult: UILabel!
@@ -63,11 +64,12 @@ class ViewController: UIViewController {
             {
                 self.lblAuthResult.textColor = UIColor.red
                 self.lblAuthResult.text = possibleError.localizedDescription
-            }
+                self.performSegue(withIdentifier: "regularLoginSegue", sender: self)            }
             else
             {
                 self.lblAuthResult.textColor = UIColor.green
                 self.lblAuthResult.text = "Authentication successful."
+                self.performSegue(withIdentifier: "passedTouchIDSegue", sender: self)
             }
         }
         
