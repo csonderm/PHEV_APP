@@ -3,11 +3,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Touch ID Demo-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PHEV" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,55 +18,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC1-pY-wmK">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="wBL-n5-SBv"/>
-                                </constraints>
-                                <state key="normal" title="Authenticate"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NC1-pY-wmK">
+                                <frame key="frameInset" minX="75" minY="432" width="225" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Touch ID">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="beginTouchIDAuthCheck:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LT3-o7-Vsy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authentication Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysc-3l-Llg">
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="&quot;&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bum-O0-xSD">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="218" id="L8q-rP-GrN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pa-e3-1kC">
-                                <frame key="frameInset" minX="140" minY="176" width="94" height="30"/>
+                                <frame key="frameInset" minX="75" minY="470" width="225" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Regular Login"/>
+                                <state key="normal" title="Manual Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="9ft-Jn-Zt4" kind="show" identifier="regularLoginSegue" id="tTc-Po-SX7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xk-pG-Naa">
+                                <frame key="frameInset" minX="8" minY="356" width="359" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zca-WQ-xoI">
+                                <frame key="frameInset" minX="75" minY="508" width="225" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Demo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="viX-W3-WqW" kind="show" id="YqX-RL-8oG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PHEV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dge-tl-vdM">
+                                <frame key="frameInset" minX="16" minY="149" width="343" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="82"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="ysc-3l-Llg" firstAttribute="centerX" secondItem="NC1-pY-wmK" secondAttribute="centerX" id="2IT-Nj-ci3"/>
-                            <constraint firstItem="NC1-pY-wmK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="164" id="4gT-5b-0uz"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bum-O0-xSD" secondAttribute="bottom" constant="104" id="XF9-F2-zdG"/>
-                            <constraint firstItem="bum-O0-xSD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jcB-Yx-Xz3"/>
-                            <constraint firstItem="ysc-3l-Llg" firstAttribute="top" secondItem="NC1-pY-wmK" secondAttribute="bottom" constant="35" id="mVn-FV-WQe"/>
-                            <constraint firstItem="NC1-pY-wmK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="pdV-JO-vOS"/>
-                            <constraint firstItem="ysc-3l-Llg" firstAttribute="centerX" secondItem="bum-O0-xSD" secondAttribute="centerX" id="wV2-V2-9kd"/>
-                            <constraint firstItem="ysc-3l-Llg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="wcN-Xn-RgZ"/>
-                            <constraint firstItem="bum-O0-xSD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="y3W-Zp-Ku5"/>
-                            <constraint firstItem="bum-O0-xSD" firstAttribute="top" secondItem="ysc-3l-Llg" secondAttribute="bottom" constant="32" id="yfL-fL-aB1"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Touch ID Demo" id="eTb-wc-O8S"/>
+                    <navigationItem key="navigationItem" id="eTb-wc-O8S"/>
                     <connections>
-                        <outlet property="AuthResultLbl" destination="ysc-3l-Llg" id="Dbb-Iv-4FR"/>
-                        <outlet property="lblAuthResult" destination="bum-O0-xSD" id="1FV-9j-lZM"/>
+                        <outlet property="DemoButton" destination="Zca-WQ-xoI" id="heC-Kf-z6W"/>
+                        <outlet property="ManualLoginButton" destination="0pa-e3-1kC" id="0kH-GQ-7ls"/>
+                        <outlet property="TouchIDButton" destination="NC1-pY-wmK" id="YqF-Bu-Yfc"/>
                         <segue destination="viX-W3-WqW" kind="show" identifier="passedTouchIDSegue" id="1Zw-OB-FKz"/>
                     </connections>
                 </viewController>
@@ -75,7 +77,7 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
-        <!--Item 2-->
+        <!--Vehicle-->
         <scene sceneID="wLI-a1-9D7">
             <objects>
                 <viewController id="aZ8-Oi-xdl" sceneMemberID="viewController">
@@ -97,13 +99,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="BDG-fn-gyz"/>
+                    <tabBarItem key="tabBarItem" title="Vehicle" image="car-side-7" id="BDG-fn-gyz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VxM-tk-ozI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1861.5999999999999" y="449.32533733133437"/>
         </scene>
-        <!--Item-->
+        <!--Trip-->
         <scene sceneID="3Jc-Wt-6Nk">
             <objects>
                 <viewController id="eZS-b0-iBX" sceneMemberID="viewController">
@@ -125,13 +127,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="tAs-yp-fGz"/>
+                    <tabBarItem key="tabBarItem" title="Trip" image="paper-map-7" id="tAs-yp-fGz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oQh-WZ-rr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="950" y="1137"/>
         </scene>
-        <!--Item-->
+        <!--E-tron-->
         <scene sceneID="7Bq-SY-Ybu">
             <objects>
                 <viewController id="gyu-Ca-ZjX" sceneMemberID="viewController">
@@ -153,7 +155,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="hpI-3H-lY5"/>
+                    <tabBarItem key="tabBarItem" title="E-tron" image="battery-7" id="hpI-3H-lY5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k7S-vi-7ZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -249,7 +251,7 @@
             </objects>
             <point key="canvasLocation" x="-0.80000000000000004" y="-650.82458770614699"/>
         </scene>
-        <!--Item-->
+        <!--Settings-->
         <scene sceneID="rr4-7S-Agj">
             <objects>
                 <viewController id="J4t-hp-iX2" sceneMemberID="viewController">
@@ -271,13 +273,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="x4l-Ty-UNd"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear-7" id="x4l-Ty-UNd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Wr-pQ-E6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1008" y="-606"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="JGu-BZ-YyD">
             <objects>
                 <viewController id="PbG-Kc-aye" sceneMemberID="viewController">
@@ -299,7 +301,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="hk5-0k-mTa"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home-7" id="hk5-0k-mTa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W6p-dv-fPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -344,7 +346,14 @@
             <point key="canvasLocation" x="-832" y="812"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="battery-7" width="30" height="30"/>
+        <image name="car-side-7" width="30" height="30"/>
+        <image name="gear-7" width="30" height="30"/>
+        <image name="home-7" width="30" height="30"/>
+        <image name="paper-map-7" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kAf-Uo-hNf"/>
+        <segue reference="YqX-RL-8oG"/>
     </inferredMetricsTieBreakers>
 </document>

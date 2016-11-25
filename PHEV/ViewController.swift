@@ -8,6 +8,7 @@
 
 import UIKit
 import LocalAuthentication
+import QuartzCore
 
 class ViewController: UIViewController {
 
@@ -15,9 +16,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = UIColor(patternImage: UIImage(named:"BackgroundOption-2.png")!)
-    }
+        
+        self.TouchIDButton.layer.borderColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
+        self.TouchIDButton.layer.borderWidth = 1.0
+        self.TouchIDButton.layer.cornerRadius = 5.0
     
-    @IBOutlet weak var AuthResultLbl: UILabel!
+        self.ManualLoginButton.layer.borderColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
+        self.ManualLoginButton.layer.borderWidth = 1.0
+        self.ManualLoginButton.layer.cornerRadius = 5.0
+        
+        self.DemoButton.layer.borderColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
+        self.DemoButton.layer.borderWidth = 1.0
+        self.DemoButton.layer.cornerRadius = 5.0    }
+    
     
     @IBAction func beginTouchIDAuthCheck(_ sender: AnyObject) {
         let authContext:LAContext = LAContext()
@@ -33,12 +44,12 @@ class ViewController: UIViewController {
                 if(wasSuccessful)
                 {
                     //User authenticated
-                    self.writeOutAuthResult(authError: error)
+                    self.AuthResult(authError: error)
                 }
                 else
                 {
                     //There are a few reasons why it can fail, we'll write them out to the user in the label
-                    self.writeOutAuthResult(authError: error)
+                    self.AuthResult(authError: error)
                 }
  
             } )
@@ -46,11 +57,14 @@ class ViewController: UIViewController {
         else
         {
             //Missing the hardware or Touch ID isn't configured
-            self.writeOutAuthResult(authError: error)
+            self.AuthResult(authError: error)
             self.performSegue(withIdentifier: "regularLoginSegue", sender: self)
         }    }
 
-    @IBOutlet weak var lblAuthResult: UILabel!
+    @IBOutlet weak var ManualLoginButton: UIButton!
+    @IBOutlet weak var TouchIDButton: UIButton!
+    @IBOutlet weak var DemoButton: UIButton!
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -58,18 +72,18 @@ class ViewController: UIViewController {
     }
     
 
-    func writeOutAuthResult(authError:Error?)
+    func AuthResult(authError:Error?)
     {
         DispatchQueue.main.async {
-            if let possibleError = authError
+            if authError != nil
             {
-                self.lblAuthResult.textColor = UIColor.red
-                self.lblAuthResult.text = possibleError.localizedDescription
+                //self.lblAuthResult.textColor = UIColor.red
+                //self.lblAuthResult.text = possibleError.localizedDescription
                 self.performSegue(withIdentifier: "regularLoginSegue", sender: self)            }
             else
             {
-                self.lblAuthResult.textColor = UIColor.green
-                self.lblAuthResult.text = "Authentication successful."
+                //self.lblAuthResult.textColor = UIColor.green
+                //self.lblAuthResult.text = "Authentication successful."
                 self.performSegue(withIdentifier: "passedTouchIDSegue", sender: self)
             }
         }
