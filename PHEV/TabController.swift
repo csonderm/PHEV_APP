@@ -1,19 +1,21 @@
 //
-//  TripViewController.swift
+//  TabController.swift
 //  PHEV
 //
-//  Created by Aaron Striegel on 11/10/16.
+//  Created by Aaron Striegel on 11/25/16.
 //  Copyright © 2016 Claire Sonderman. All rights reserved.
 //
 
 import UIKit
 
-class TripViewController: UIViewController {
+class TabController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated: false)        // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"atlantic-blurred-background.jpg")!)    }
+        self.navigationItem.setHidesBackButton(true, animated: false)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"atlantic-blurred-background.jpg")!)
+        // Do any additional setup after loading the view.
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

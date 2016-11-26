@@ -12,8 +12,8 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.tabBarController!.navigationItem.hidesBackButton = true
+        self.navigationItem.setHidesBackButton(true, animated: false)        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
