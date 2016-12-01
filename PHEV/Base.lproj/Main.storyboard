@@ -108,7 +108,7 @@
         <!--Trip-->
         <scene sceneID="3Jc-Wt-6Nk">
             <objects>
-                <viewController id="eZS-b0-iBX" sceneMemberID="viewController">
+                <viewController id="eZS-b0-iBX" customClass="TripViewController" customModule="PHEV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2S6-YI-yen"/>
                         <viewControllerLayoutGuide type="bottom" id="v3T-zM-vW0"/>
@@ -116,25 +116,6 @@
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="TripViewController" id="MJo-xD-B8p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="EAn-Ji-B85">
-                                <frame key="frameInset" minY="119" width="375" height="218"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nov 25, 2016, 2:27 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gb-jc-OEV">
-                                <frame key="frameInset" minX="62" minY="83" width="251" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIf-fj-sxY">
-                                <frame key="frameInset" minX="16" minY="78" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Prev"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Trip" image="paper-map-7" id="tAs-yp-fGz"/>
@@ -311,7 +292,7 @@
                             <tableViewSection headerTitle="General" id="rXP-1w-Eao">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="hpd-ME-1Oc">
-                                        <rect key="frame" x="0.0" y="265" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="264" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hpd-ME-1Oc" id="4wV-3Y-pm0">
                                             <frame key="frameInset" width="375" height="43"/>
@@ -328,7 +309,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="j6Y-q2-xub">
-                                        <rect key="frame" x="0.0" y="309" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="308" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j6Y-q2-xub" id="nJw-5e-I4Z">
                                             <frame key="frameInset" width="375" height="43"/>
@@ -345,7 +326,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="rUB-Sy-eCf">
-                                        <rect key="frame" x="0.0" y="353" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="352" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rUB-Sy-eCf" id="svG-rw-M7E">
                                             <frame key="frameInset" width="375" height="43"/>
@@ -366,7 +347,7 @@
                             <tableViewSection headerTitle="Other" id="XVh-zd-xCu">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="cNE-Ft-i3R">
-                                        <rect key="frame" x="0.0" y="454" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="452" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cNE-Ft-i3R" id="l3g-G2-jhd">
                                             <frame key="frameInset" width="375" height="43"/>
@@ -468,7 +449,6 @@
         <image name="car-side-7" width="30" height="30"/>
         <image name="gear-7" width="30" height="30"/>
         <image name="home-7" width="30" height="30"/>
-        <image name="map" width="737" height="440"/>
         <image name="paper-map-7" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
