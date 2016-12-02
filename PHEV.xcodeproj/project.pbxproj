@@ -21,6 +21,7 @@
 		25CD360F1DE9081500391A20 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD360E1DE9081500391A20 /* TabController.swift */; };
 		25CD36111DE90B7100391A20 /* SettingsControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD36101DE90B7100391A20 /* SettingsControllerTableViewController.swift */; };
 		25F9990D1DF0820200331AE4 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9990C1DF0820200331AE4 /* TripTableViewCell.swift */; };
+		25F999101DF1E80600331AE4 /* IndividualTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9990F1DF1E80600331AE4 /* IndividualTripViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		25CD360E1DE9081500391A20 /* TabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		25CD36101DE90B7100391A20 /* SettingsControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsControllerTableViewController.swift; sourceTree = "<group>"; };
 		25F9990C1DF0820200331AE4 /* TripTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
+		25F9990F1DF1E80600331AE4 /* IndividualTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualTripViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				25CD360E1DE9081500391A20 /* TabController.swift */,
 				25CD36101DE90B7100391A20 /* SettingsControllerTableViewController.swift */,
 				25F9990C1DF0820200331AE4 /* TripTableViewCell.swift */,
+				25F9990F1DF1E80600331AE4 /* IndividualTripViewController.swift */,
 			);
 			path = PHEV;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				250FC1A81DD52AC80027213D /* TripViewController.swift in Sources */,
 				25CD36111DE90B7100391A20 /* SettingsControllerTableViewController.swift in Sources */,
 				250FC1A61DD52ABA0027213D /* EtronViewController.swift in Sources */,
+				25F999101DF1E80600331AE4 /* IndividualTripViewController.swift in Sources */,
 				25CD360F1DE9081500391A20 /* TabController.swift in Sources */,
 				250FC1A21DD52A950027213D /* HomeViewController.swift in Sources */,
 			);

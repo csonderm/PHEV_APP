@@ -10,8 +10,7 @@ import UIKit
 
 class TripViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
 
-   // @IBOutlet weak var tripGraphic: UIImageView!
-    //@IBOutlet weak var tripTableView: UITableView!
+    @IBOutlet weak var tripTableView: UITableView!
     
     let tripDates = ["December 1, 2016 10:05 PM", "December 1, 2016 8:32 AM", "November 30, 2016 4:55 PM"]
     
@@ -33,18 +32,18 @@ class TripViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return 1
     }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tripDates.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cellIdentifier = "cell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! TripTableViewCell
+        let cell = tripTableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         let date = tripDates[indexPath.row]
         
-        cell.dateLabel.text = date
+        cell.textLabel?.text = date
         
         return cell
     }
