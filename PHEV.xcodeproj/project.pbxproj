@@ -10,7 +10,6 @@
 		250FC1A21DD52A950027213D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1A11DD52A950027213D /* HomeViewController.swift */; };
 		250FC1A41DD52AAB0027213D /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1A31DD52AAB0027213D /* VehicleViewController.swift */; };
 		250FC1A61DD52ABA0027213D /* EtronViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1A51DD52ABA0027213D /* EtronViewController.swift */; };
-		250FC1A81DD52AC80027213D /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1A71DD52AC80027213D /* TripViewController.swift */; };
 		250FC1AC1DD636CC0027213D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1AB1DD636CC0027213D /* LoginViewController.swift */; };
 		2513F9B61DC9447E006B52B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2513F9B51DC9447E006B52B8 /* AppDelegate.swift */; };
 		2513F9B81DC9447E006B52B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2513F9B71DC9447E006B52B8 /* ViewController.swift */; };
@@ -18,10 +17,13 @@
 		2513F9BD1DC9447E006B52B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2513F9BC1DC9447E006B52B8 /* Assets.xcassets */; };
 		2513F9C01DC9447E006B52B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2513F9BE1DC9447E006B52B8 /* LaunchScreen.storyboard */; };
 		2513F9CB1DC9447F006B52B8 /* PHEVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2513F9CA1DC9447F006B52B8 /* PHEVTests.swift */; };
+		25197E281DF4B9E6005B8598 /* TripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25197E271DF4B9E6005B8598 /* TripTableViewController.swift */; };
+		251E13481DF90510009178F2 /* TripContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251E13471DF90510009178F2 /* TripContentViewController.swift */; };
+		251E134A1DF90C06009178F2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251E13491DF90C06009178F2 /* MapViewController.swift */; };
+		251E134C1DF90C1A009178F2 /* TripStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251E134B1DF90C1A009178F2 /* TripStatsViewController.swift */; };
 		25CD360F1DE9081500391A20 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD360E1DE9081500391A20 /* TabController.swift */; };
 		25CD36111DE90B7100391A20 /* SettingsControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD36101DE90B7100391A20 /* SettingsControllerTableViewController.swift */; };
 		25F9990D1DF0820200331AE4 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9990C1DF0820200331AE4 /* TripTableViewCell.swift */; };
-		25F999101DF1E80600331AE4 /* IndividualTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9990F1DF1E80600331AE4 /* IndividualTripViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 		250FC1A11DD52A950027213D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		250FC1A31DD52AAB0027213D /* VehicleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
 		250FC1A51DD52ABA0027213D /* EtronViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtronViewController.swift; sourceTree = "<group>"; };
-		250FC1A71DD52AC80027213D /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 		250FC1AB1DD636CC0027213D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2513F9B21DC9447E006B52B8 /* PHEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2513F9B51DC9447E006B52B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,10 +51,13 @@
 		2513F9C61DC9447F006B52B8 /* PHEVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHEVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2513F9CA1DC9447F006B52B8 /* PHEVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHEVTests.swift; sourceTree = "<group>"; };
 		2513F9CC1DC9447F006B52B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25197E271DF4B9E6005B8598 /* TripTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTableViewController.swift; sourceTree = "<group>"; };
+		251E13471DF90510009178F2 /* TripContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripContentViewController.swift; sourceTree = "<group>"; };
+		251E13491DF90C06009178F2 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		251E134B1DF90C1A009178F2 /* TripStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStatsViewController.swift; sourceTree = "<group>"; };
 		25CD360E1DE9081500391A20 /* TabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		25CD36101DE90B7100391A20 /* SettingsControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsControllerTableViewController.swift; sourceTree = "<group>"; };
 		25F9990C1DF0820200331AE4 /* TripTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
-		25F9990F1DF1E80600331AE4 /* IndividualTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualTripViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +108,14 @@
 				250FC1A11DD52A950027213D /* HomeViewController.swift */,
 				250FC1A31DD52AAB0027213D /* VehicleViewController.swift */,
 				250FC1A51DD52ABA0027213D /* EtronViewController.swift */,
-				250FC1A71DD52AC80027213D /* TripViewController.swift */,
 				250FC1AB1DD636CC0027213D /* LoginViewController.swift */,
 				25CD360E1DE9081500391A20 /* TabController.swift */,
 				25CD36101DE90B7100391A20 /* SettingsControllerTableViewController.swift */,
 				25F9990C1DF0820200331AE4 /* TripTableViewCell.swift */,
-				25F9990F1DF1E80600331AE4 /* IndividualTripViewController.swift */,
+				25197E271DF4B9E6005B8598 /* TripTableViewController.swift */,
+				251E13471DF90510009178F2 /* TripContentViewController.swift */,
+				251E13491DF90C06009178F2 /* MapViewController.swift */,
+				251E134B1DF90C1A009178F2 /* TripStatsViewController.swift */,
 			);
 			path = PHEV;
 			sourceTree = "<group>";
@@ -228,14 +234,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2513F9B81DC9447E006B52B8 /* ViewController.swift in Sources */,
+				25197E281DF4B9E6005B8598 /* TripTableViewController.swift in Sources */,
 				250FC1A41DD52AAB0027213D /* VehicleViewController.swift in Sources */,
 				2513F9B61DC9447E006B52B8 /* AppDelegate.swift in Sources */,
 				250FC1AC1DD636CC0027213D /* LoginViewController.swift in Sources */,
 				25F9990D1DF0820200331AE4 /* TripTableViewCell.swift in Sources */,
-				250FC1A81DD52AC80027213D /* TripViewController.swift in Sources */,
+				251E134A1DF90C06009178F2 /* MapViewController.swift in Sources */,
+				251E13481DF90510009178F2 /* TripContentViewController.swift in Sources */,
 				25CD36111DE90B7100391A20 /* SettingsControllerTableViewController.swift in Sources */,
 				250FC1A61DD52ABA0027213D /* EtronViewController.swift in Sources */,
-				25F999101DF1E80600331AE4 /* IndividualTripViewController.swift in Sources */,
+				251E134C1DF90C1A009178F2 /* TripStatsViewController.swift in Sources */,
 				25CD360F1DE9081500391A20 /* TabController.swift in Sources */,
 				250FC1A21DD52A950027213D /* HomeViewController.swift in Sources */,
 			);

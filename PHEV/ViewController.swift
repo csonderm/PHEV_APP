@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"BackgroundOption-2.png")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"login.png")!)
         
         self.TouchIDButton.layer.borderColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
         self.TouchIDButton.layer.borderWidth = 1.0
@@ -29,6 +29,15 @@ class ViewController: UIViewController {
         self.DemoButton.layer.borderWidth = 1.0
         self.DemoButton.layer.cornerRadius = 5.0    }
     
+    override func viewWillAppear(_ animated: Bool) {
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
     
     @IBAction func beginTouchIDAuthCheck(_ sender: AnyObject) {
         let authContext:LAContext = LAContext()

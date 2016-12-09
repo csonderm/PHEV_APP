@@ -15,7 +15,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         self.navigationItem.setHidesBackButton(true, animated: false)
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"BackgroundOption-2.png")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"login.png")!)
+        self.view.backgroundColor?.withAlphaComponent(0.3)
         self.AccountTextField.layer.borderColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
         self.AccountTextField.layer.borderWidth = 1.0
         self.AccountTextField.layer.cornerRadius = 5.0
@@ -34,6 +35,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     @IBOutlet weak var LoginButton: UIButton!

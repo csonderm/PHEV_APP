@@ -2,52 +2,24 @@
 //  TripViewController.swift
 //  PHEV
 //
-//  Created by Aaron Striegel on 11/10/16.
+//  Created by Aaron Striegel on 12/4/16.
 //  Copyright © 2016 Claire Sonderman. All rights reserved.
 //
 
 import UIKit
 
-class TripViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
+class TripViewController: UIViewController {
 
-    @IBOutlet weak var tripTableView: UITableView!
-    
-    let tripDates = ["December 1, 2016 10:05 PM", "December 1, 2016 8:32 AM", "November 30, 2016 4:55 PM"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated: false)        // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"atlantic-blurred-background.jpg")!)
-       // tripTableView.dataSource = self
-        //tripTableView.delegate = self
+
+        // Do any additional setup after loading the view.
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tripDates.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
-        let cell = tripTableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
-        let date = tripDates[indexPath.row]
-        
-        cell.textLabel?.text = date
-        
-        return cell
-    }
-
     
 
     /*
