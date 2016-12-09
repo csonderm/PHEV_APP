@@ -10,28 +10,31 @@ import UIKit
 
 class TripStatsViewController: UIViewController {
 
-    @IBOutlet weak var Speed: UIView!
-    @IBOutlet weak var Distance: UIView!
-    @IBOutlet weak var Duration: UIView!
+    @IBOutlet weak var TripStatsGraphic: UIImageView!
+    @IBOutlet weak var TripStatsGraphicView: UIView!
+    @IBOutlet weak var StatsView2: UIView!
+    @IBOutlet weak var StatsView1: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        Speed.layer.shadowColor = UIColor.black.cgColor
-        Speed.layer.shadowOpacity = 0.3
-        Speed.layer.shadowOffset = CGSize.zero
-        Speed.layer.shadowRadius = 8
-        Speed.layer.shouldRasterize = true
+        TripStatsGraphicView.layer.shadowColor = UIColor.black.cgColor
+        TripStatsGraphicView.layer.shadowOpacity = 0.3
+        TripStatsGraphicView.layer.shadowOffset = CGSize.zero
+        TripStatsGraphicView.layer.shadowRadius = 8
+        TripStatsGraphicView.layer.shouldRasterize = true
         
-        Distance.layer.shadowColor = UIColor.black.cgColor
-        Distance.layer.shadowOpacity = 0.3
-        Distance.layer.shadowOffset = CGSize.zero
-        Distance.layer.shadowRadius = 8
-        Distance.layer.shouldRasterize = true
+        StatsView1.layer.shadowColor = UIColor.black.cgColor
+        StatsView1.layer.shadowOpacity = 0.3
+        StatsView1.layer.shadowOffset = CGSize.zero
+        StatsView1.layer.shadowRadius = 8
+        StatsView1.layer.shouldRasterize = true
         
-        Duration.layer.shadowColor = UIColor.black.cgColor
-        Duration.layer.shadowOpacity = 0.3
-        Duration.layer.shadowOffset = CGSize.zero
-        Duration.layer.shadowRadius = 8
-        Duration.layer.shouldRasterize = true
+        StatsView2.layer.shadowColor = UIColor.black.cgColor
+        StatsView2.layer.shadowOpacity = 0.3
+        StatsView2.layer.shadowOffset = CGSize.zero
+        StatsView2.layer.shadowRadius = 8
+        StatsView2.layer.shouldRasterize = true
+        
     }
 
     override func didReceiveMemoryWarning() {

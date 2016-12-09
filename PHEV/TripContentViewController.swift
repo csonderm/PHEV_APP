@@ -20,8 +20,8 @@ class TripContentViewController: UIPageViewController, UIPageViewControllerDataS
         
         let pageControl = UIPageControl.appearance()
         pageControl.pageIndicatorTintColor = UIColor.lightGray
-        pageControl.currentPageIndicatorTintColor = UIColor.blue
-        pageControl.backgroundColor = UIColor.white
+        pageControl.currentPageIndicatorTintColor = UIColor.white
+        pageControl.backgroundColor = UIColor.darkGray
         
         self.pages = [
             self.storyboard!.instantiateViewController(withIdentifier: "MapNavigationController") as! UINavigationController,
