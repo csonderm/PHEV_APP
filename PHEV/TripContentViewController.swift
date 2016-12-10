@@ -10,6 +10,7 @@ import UIKit
 
 class TripContentViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
+    var toPass: Int = 0
     var pages = [UINavigationController]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +60,15 @@ class TripContentViewController: UIPageViewController, UIPageViewControllerDataS
         return 0
     }
     
-    
+    func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        print("Hello: \(self.toPass)")
+        if (segue.identifier == "MapSegue") {
+            let svc = segue!.destination as? UINavigationController
+            let child = svc?.topViewController as? MapViewController
+            child?.toPass = self.toPass
+            print("Hello: \(self.toPass)")
+        }
+    }
 
     /*
     // MARK: - Navigation

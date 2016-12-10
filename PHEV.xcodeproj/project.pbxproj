@@ -22,6 +22,7 @@
 		251E134C1DF90C1A009178F2 /* TripStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251E134B1DF90C1A009178F2 /* TripStatsViewController.swift */; };
 		257A0EE21DFB9203001C8219 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A0EE11DFB9203001C8219 /* TripViewController.swift */; };
 		257A0EE41DFCAAE9001C8219 /* TripContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A0EE31DFCAAE9001C8219 /* TripContainerViewController.swift */; };
+		258E54A91DFCB1FB00A56536 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258E54A81DFCB1FB00A56536 /* FavoritesViewController.swift */; };
 		25CD360F1DE9081500391A20 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD360E1DE9081500391A20 /* TabController.swift */; };
 		25CD36111DE90B7100391A20 /* SettingsControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD36101DE90B7100391A20 /* SettingsControllerTableViewController.swift */; };
 		25F9990D1DF0820200331AE4 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9990C1DF0820200331AE4 /* TripTableViewCell.swift */; };
@@ -57,6 +58,7 @@
 		251E134B1DF90C1A009178F2 /* TripStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStatsViewController.swift; sourceTree = "<group>"; };
 		257A0EE11DFB9203001C8219 /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 		257A0EE31DFCAAE9001C8219 /* TripContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripContainerViewController.swift; sourceTree = "<group>"; };
+		258E54A81DFCB1FB00A56536 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		25CD360E1DE9081500391A20 /* TabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		25CD36101DE90B7100391A20 /* SettingsControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsControllerTableViewController.swift; sourceTree = "<group>"; };
 		25F9990C1DF0820200331AE4 /* TripTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		2513F9B41DC9447E006B52B8 /* PHEV */ = {
 			isa = PBXGroup;
 			children = (
+				258E54AC1DFCBE0C00A56536 /* New Group */,
 				2513F9B51DC9447E006B52B8 /* AppDelegate.swift */,
 				2513F9B71DC9447E006B52B8 /* ViewController.swift */,
 				2513F9B91DC9447E006B52B8 /* Main.storyboard */,
@@ -119,6 +122,7 @@
 				251E134B1DF90C1A009178F2 /* TripStatsViewController.swift */,
 				257A0EE11DFB9203001C8219 /* TripViewController.swift */,
 				257A0EE31DFCAAE9001C8219 /* TripContainerViewController.swift */,
+				258E54A81DFCB1FB00A56536 /* FavoritesViewController.swift */,
 			);
 			path = PHEV;
 			sourceTree = "<group>";
@@ -130,6 +134,13 @@
 				2513F9CC1DC9447F006B52B8 /* Info.plist */,
 			);
 			path = PHEVTests;
+			sourceTree = "<group>";
+		};
+		258E54AC1DFCBE0C00A56536 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +260,7 @@
 				250FC1A61DD52ABA0027213D /* EtronViewController.swift in Sources */,
 				251E134C1DF90C1A009178F2 /* TripStatsViewController.swift in Sources */,
 				25CD360F1DE9081500391A20 /* TabController.swift in Sources */,
+				258E54A91DFCB1FB00A56536 /* FavoritesViewController.swift in Sources */,
 				250FC1A21DD52A950027213D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

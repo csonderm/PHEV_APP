@@ -15,7 +15,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var MapImage: UIImageView!
     @IBOutlet weak var StarButton: UIButton!
     @IBOutlet weak var ShareButton: UIButton!
-    
+    var toPass: Int = 0
     var starIndex = 0
     var stars = [UIImage]()
     
@@ -31,12 +31,15 @@ class MapViewController: UIViewController {
         RouteView.layer.shadowOpacity = 0.3
         RouteView.layer.shadowOffset = CGSize.zero
         RouteView.layer.shadowRadius = 8
-        RouteView.layer.shouldRasterize = true
         
+        
+        RouteView.layer.shouldRasterize = true
         let starImage = UIImage(named: "Star-100.png")! as UIImage
         let starFilledImage = UIImage(named: "Star Filled-100.png")! as UIImage
         self.stars = [starImage, starFilledImage]
         
+        
+        starIndex = toPass
         StarButton.setBackgroundImage(self.stars[starIndex], for: UIControlState.normal)
     }
 
