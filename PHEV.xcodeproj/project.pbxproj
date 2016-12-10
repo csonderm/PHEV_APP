@@ -103,7 +103,6 @@
 		2513F9B41DC9447E006B52B8 /* PHEV */ = {
 			isa = PBXGroup;
 			children = (
-				258E54AC1DFCBE0C00A56536 /* New Group */,
 				2513F9B51DC9447E006B52B8 /* AppDelegate.swift */,
 				2513F9B71DC9447E006B52B8 /* ViewController.swift */,
 				2513F9B91DC9447E006B52B8 /* Main.storyboard */,
@@ -134,13 +133,6 @@
 				2513F9CC1DC9447F006B52B8 /* Info.plist */,
 			);
 			path = PHEVTests;
-			sourceTree = "<group>";
-		};
-		258E54AC1DFCBE0C00A56536 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

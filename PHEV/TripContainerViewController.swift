@@ -18,7 +18,19 @@ class TripContainerViewController: UIViewController {
         super.viewDidLoad()
         picker.setTitle("All", forSegmentAt:0)
         picker.setTitle("Favorites", forSegmentAt: 1)
+        let attr = NSDictionary(object: UIFont(name: "HelveticaNeue-Thin", size: 17.0)!, forKey: NSFontAttributeName as NSCopying)
+        picker.setTitleTextAttributes(attr as [NSObject : AnyObject], for: .normal)
         // Do any additional setup after loading the view.
+        for i in 0...picker.subviews.count-1 {
+            if(picker.selectedSegmentIndex != i) {
+                (picker.subviews[i]).tintColor = UIColor.lightGray
+            }
+            else {
+                (picker.subviews[i]).tintColor = nil
+            }
+            picker.subviews[i].layer.borderColor = UIColor.lightGray.cgColor
+            picker.subviews[i].layer.cornerRadius = 10.0
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,6 +48,16 @@ class TripContainerViewController: UIViewController {
                 self.AllContainer.alpha = 0
                 self.FavoriteContainer.alpha = 1
             })
+        }
+        for i in 0...sender.subviews.count-1 {
+            if(sender.selectedSegmentIndex != i) {
+                (sender.subviews[i]).tintColor = UIColor.lightGray
+            }
+            else {
+                (sender.subviews[i]).tintColor = nil
+            }
+            sender.subviews[i].layer.borderColor = UIColor.lightGray.cgColor
+            sender.subviews[i].layer.cornerRadius = 10.0
         }
     }
     
