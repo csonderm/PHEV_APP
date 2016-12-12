@@ -23,6 +23,7 @@
 		257A0EE21DFB9203001C8219 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A0EE11DFB9203001C8219 /* TripViewController.swift */; };
 		257A0EE41DFCAAE9001C8219 /* TripContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A0EE31DFCAAE9001C8219 /* TripContainerViewController.swift */; };
 		258E54A91DFCB1FB00A56536 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258E54A81DFCB1FB00A56536 /* FavoritesViewController.swift */; };
+		258E54B21DFE321200A56536 /* RatingReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258E54B11DFE321200A56536 /* RatingReportViewController.swift */; };
 		25CD360F1DE9081500391A20 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD360E1DE9081500391A20 /* TabController.swift */; };
 		25CD36111DE90B7100391A20 /* SettingsControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD36101DE90B7100391A20 /* SettingsControllerTableViewController.swift */; };
 		25F9990D1DF0820200331AE4 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9990C1DF0820200331AE4 /* TripTableViewCell.swift */; };
@@ -59,6 +60,7 @@
 		257A0EE11DFB9203001C8219 /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 		257A0EE31DFCAAE9001C8219 /* TripContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripContainerViewController.swift; sourceTree = "<group>"; };
 		258E54A81DFCB1FB00A56536 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		258E54B11DFE321200A56536 /* RatingReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingReportViewController.swift; sourceTree = "<group>"; };
 		25CD360E1DE9081500391A20 /* TabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		25CD36101DE90B7100391A20 /* SettingsControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsControllerTableViewController.swift; sourceTree = "<group>"; };
 		25F9990C1DF0820200331AE4 /* TripTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				257A0EE11DFB9203001C8219 /* TripViewController.swift */,
 				257A0EE31DFCAAE9001C8219 /* TripContainerViewController.swift */,
 				258E54A81DFCB1FB00A56536 /* FavoritesViewController.swift */,
+				258E54B11DFE321200A56536 /* RatingReportViewController.swift */,
 			);
 			path = PHEV;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				250FC1AC1DD636CC0027213D /* LoginViewController.swift in Sources */,
 				25F9990D1DF0820200331AE4 /* TripTableViewCell.swift in Sources */,
 				251E134A1DF90C06009178F2 /* MapViewController.swift in Sources */,
+				258E54B21DFE321200A56536 /* RatingReportViewController.swift in Sources */,
 				251E13481DF90510009178F2 /* TripContentViewController.swift in Sources */,
 				257A0EE41DFCAAE9001C8219 /* TripContainerViewController.swift in Sources */,
 				25CD36111DE90B7100391A20 /* SettingsControllerTableViewController.swift in Sources */,

@@ -65,7 +65,7 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
         if (segue.identifier == "AllSegue") {
-            var svc = segue!.destination as! TripContentViewController;
+            let svc = segue!.destination as! TripContentViewController;
             
             svc.toPass = 0
             

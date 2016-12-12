@@ -22,18 +22,17 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         MapView.layer.shadowColor = UIColor.black.cgColor
-        MapView.layer.shadowOpacity = 0.3
+        MapView.layer.shadowOpacity = 0.5
         MapView.layer.shadowOffset = CGSize.zero
         MapView.layer.shadowRadius = 8
         MapView.layer.shouldRasterize = true
         
         RouteView.layer.shadowColor = UIColor.black.cgColor
-        RouteView.layer.shadowOpacity = 0.3
+        RouteView.layer.shadowOpacity = 0.5
         RouteView.layer.shadowOffset = CGSize.zero
         RouteView.layer.shadowRadius = 8
-        
-        
         RouteView.layer.shouldRasterize = true
+        
         let starImage = UIImage(named: "Star-100.png")! as UIImage
         let starFilledImage = UIImage(named: "Star Filled-100.png")! as UIImage
         self.stars = [starImage, starFilledImage]

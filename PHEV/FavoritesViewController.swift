@@ -26,7 +26,7 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if let index = TripsTable.indexPathForSelectedRow {
+        if let index = TripsTable.indexPathForSelectedRow{
             TripsTable.deselectRow(at: index, animated: true)
         }
     }

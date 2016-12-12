@@ -18,19 +18,19 @@ class TripStatsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         TripStatsGraphicView.layer.shadowColor = UIColor.black.cgColor
-        TripStatsGraphicView.layer.shadowOpacity = 0.3
+        TripStatsGraphicView.layer.shadowOpacity = 0.5
         TripStatsGraphicView.layer.shadowOffset = CGSize.zero
         TripStatsGraphicView.layer.shadowRadius = 8
         TripStatsGraphicView.layer.shouldRasterize = true
         
         StatsView1.layer.shadowColor = UIColor.black.cgColor
-        StatsView1.layer.shadowOpacity = 0.3
+        StatsView1.layer.shadowOpacity = 0.5
         StatsView1.layer.shadowOffset = CGSize.zero
         StatsView1.layer.shadowRadius = 8
         StatsView1.layer.shouldRasterize = true
         
         StatsView2.layer.shadowColor = UIColor.black.cgColor
-        StatsView2.layer.shadowOpacity = 0.3
+        StatsView2.layer.shadowOpacity = 0.5
         StatsView2.layer.shadowOffset = CGSize.zero
         StatsView2.layer.shadowRadius = 8
         StatsView2.layer.shouldRasterize = true
