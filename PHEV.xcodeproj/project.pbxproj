@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25001FE11E009DCC0038D6B6 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25001FE01E009DCC0038D6B6 /* ControlViewController.swift */; };
+		25001FE31E00A2FE0038D6B6 /* VehicleStatsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25001FE21E00A2FE0038D6B6 /* VehicleStatsPageViewController.swift */; };
+		25001FE51E00ABFF0038D6B6 /* NovemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25001FE41E00ABFF0038D6B6 /* NovemberViewController.swift */; };
+		25001FE71E00AC0C0038D6B6 /* DecemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25001FE61E00AC0C0038D6B6 /* DecemberViewController.swift */; };
 		250FC1A21DD52A950027213D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1A11DD52A950027213D /* HomeViewController.swift */; };
 		250FC1A41DD52AAB0027213D /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1A31DD52AAB0027213D /* VehicleViewController.swift */; };
-		250FC1A61DD52ABA0027213D /* EtronViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1A51DD52ABA0027213D /* EtronViewController.swift */; };
 		250FC1AC1DD636CC0027213D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1AB1DD636CC0027213D /* LoginViewController.swift */; };
 		2513F9B61DC9447E006B52B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2513F9B51DC9447E006B52B8 /* AppDelegate.swift */; };
 		2513F9B81DC9447E006B52B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2513F9B71DC9447E006B52B8 /* ViewController.swift */; };
@@ -40,9 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25001FE01E009DCC0038D6B6 /* ControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
+		25001FE21E00A2FE0038D6B6 /* VehicleStatsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleStatsPageViewController.swift; sourceTree = "<group>"; };
+		25001FE41E00ABFF0038D6B6 /* NovemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovemberViewController.swift; sourceTree = "<group>"; };
+		25001FE61E00AC0C0038D6B6 /* DecemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecemberViewController.swift; sourceTree = "<group>"; };
 		250FC1A11DD52A950027213D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		250FC1A31DD52AAB0027213D /* VehicleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
-		250FC1A51DD52ABA0027213D /* EtronViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtronViewController.swift; sourceTree = "<group>"; };
 		250FC1AB1DD636CC0027213D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2513F9B21DC9447E006B52B8 /* PHEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2513F9B51DC9447E006B52B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +119,6 @@
 				2513F9C11DC9447E006B52B8 /* Info.plist */,
 				250FC1A11DD52A950027213D /* HomeViewController.swift */,
 				250FC1A31DD52AAB0027213D /* VehicleViewController.swift */,
-				250FC1A51DD52ABA0027213D /* EtronViewController.swift */,
 				250FC1AB1DD636CC0027213D /* LoginViewController.swift */,
 				25CD360E1DE9081500391A20 /* TabController.swift */,
 				25CD36101DE90B7100391A20 /* SettingsControllerTableViewController.swift */,
@@ -125,6 +130,10 @@
 				257A0EE31DFCAAE9001C8219 /* TripContainerViewController.swift */,
 				258E54A81DFCB1FB00A56536 /* FavoritesViewController.swift */,
 				258E54B11DFE321200A56536 /* RatingReportViewController.swift */,
+				25001FE01E009DCC0038D6B6 /* ControlViewController.swift */,
+				25001FE21E00A2FE0038D6B6 /* VehicleStatsPageViewController.swift */,
+				25001FE41E00ABFF0038D6B6 /* NovemberViewController.swift */,
+				25001FE61E00AC0C0038D6B6 /* DecemberViewController.swift */,
 			);
 			path = PHEV;
 			sourceTree = "<group>";
@@ -248,12 +257,15 @@
 				250FC1AC1DD636CC0027213D /* LoginViewController.swift in Sources */,
 				25F9990D1DF0820200331AE4 /* TripTableViewCell.swift in Sources */,
 				251E134A1DF90C06009178F2 /* MapViewController.swift in Sources */,
+				25001FE11E009DCC0038D6B6 /* ControlViewController.swift in Sources */,
 				258E54B21DFE321200A56536 /* RatingReportViewController.swift in Sources */,
+				25001FE71E00AC0C0038D6B6 /* DecemberViewController.swift in Sources */,
+				25001FE51E00ABFF0038D6B6 /* NovemberViewController.swift in Sources */,
 				251E13481DF90510009178F2 /* TripContentViewController.swift in Sources */,
 				257A0EE41DFCAAE9001C8219 /* TripContainerViewController.swift in Sources */,
 				25CD36111DE90B7100391A20 /* SettingsControllerTableViewController.swift in Sources */,
+				25001FE31E00A2FE0038D6B6 /* VehicleStatsPageViewController.swift in Sources */,
 				257A0EE21DFB9203001C8219 /* TripViewController.swift in Sources */,
-				250FC1A61DD52ABA0027213D /* EtronViewController.swift in Sources */,
 				251E134C1DF90C1A009178F2 /* TripStatsViewController.swift in Sources */,
 				25CD360F1DE9081500391A20 /* TabController.swift in Sources */,
 				258E54A91DFCB1FB00A56536 /* FavoritesViewController.swift in Sources */,

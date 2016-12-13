@@ -1,18 +1,19 @@
 //
-//  EtronViewController.swift
+//  ControlViewController.swift
 //  PHEV
 //
-//  Created by Aaron Striegel on 11/10/16.
+//  Created by Aaron Striegel on 12/13/16.
 //  Copyright © 2016 Claire Sonderman. All rights reserved.
 //
 
 import UIKit
 
-class EtronViewController: UIViewController {
+class ControlViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated: false)        // Do any additional setup after loading the view.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +30,8 @@ class EtronViewController: UIViewController {
         // Show the navigation bar on other view controllers
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
+    
+
     /*
     // MARK: - Navigation
 
