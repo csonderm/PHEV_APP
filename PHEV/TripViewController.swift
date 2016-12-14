@@ -20,7 +20,7 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         TripsTable.delegate = self
         TripsTable.dataSource = self
-        
+        TripsTable.contentInset = UIEdgeInsetsMake(-63, 0, 0, 0);
 
         // Do any additional setup after loading the view.
     }

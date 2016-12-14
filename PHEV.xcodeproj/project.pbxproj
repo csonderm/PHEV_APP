@@ -11,6 +11,7 @@
 		25001FE31E00A2FE0038D6B6 /* VehicleStatsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25001FE21E00A2FE0038D6B6 /* VehicleStatsPageViewController.swift */; };
 		25001FE51E00ABFF0038D6B6 /* NovemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25001FE41E00ABFF0038D6B6 /* NovemberViewController.swift */; };
 		25001FE71E00AC0C0038D6B6 /* DecemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25001FE61E00AC0C0038D6B6 /* DecemberViewController.swift */; };
+		25001FEC1E010B660038D6B6 /* ViewCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25001FEB1E010B660038D6B6 /* ViewCarViewController.swift */; };
 		250FC1A21DD52A950027213D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1A11DD52A950027213D /* HomeViewController.swift */; };
 		250FC1A41DD52AAB0027213D /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1A31DD52AAB0027213D /* VehicleViewController.swift */; };
 		250FC1AC1DD636CC0027213D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250FC1AB1DD636CC0027213D /* LoginViewController.swift */; };
@@ -25,6 +26,7 @@
 		251E134C1DF90C1A009178F2 /* TripStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251E134B1DF90C1A009178F2 /* TripStatsViewController.swift */; };
 		257A0EE21DFB9203001C8219 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A0EE11DFB9203001C8219 /* TripViewController.swift */; };
 		257A0EE41DFCAAE9001C8219 /* TripContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A0EE31DFCAAE9001C8219 /* TripContainerViewController.swift */; };
+		257A84251E011F560043B54B /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A84241E011F560043B54B /* TimerViewController.swift */; };
 		258E54A91DFCB1FB00A56536 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258E54A81DFCB1FB00A56536 /* FavoritesViewController.swift */; };
 		258E54B21DFE321200A56536 /* RatingReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258E54B11DFE321200A56536 /* RatingReportViewController.swift */; };
 		25CD360F1DE9081500391A20 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CD360E1DE9081500391A20 /* TabController.swift */; };
@@ -47,6 +49,7 @@
 		25001FE21E00A2FE0038D6B6 /* VehicleStatsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleStatsPageViewController.swift; sourceTree = "<group>"; };
 		25001FE41E00ABFF0038D6B6 /* NovemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovemberViewController.swift; sourceTree = "<group>"; };
 		25001FE61E00AC0C0038D6B6 /* DecemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecemberViewController.swift; sourceTree = "<group>"; };
+		25001FEB1E010B660038D6B6 /* ViewCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCarViewController.swift; sourceTree = "<group>"; };
 		250FC1A11DD52A950027213D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		250FC1A31DD52AAB0027213D /* VehicleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
 		250FC1AB1DD636CC0027213D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		251E134B1DF90C1A009178F2 /* TripStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStatsViewController.swift; sourceTree = "<group>"; };
 		257A0EE11DFB9203001C8219 /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 		257A0EE31DFCAAE9001C8219 /* TripContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripContainerViewController.swift; sourceTree = "<group>"; };
+		257A84241E011F560043B54B /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		258E54A81DFCB1FB00A56536 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		258E54B11DFE321200A56536 /* RatingReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingReportViewController.swift; sourceTree = "<group>"; };
 		25CD360E1DE9081500391A20 /* TabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 		2513F9B41DC9447E006B52B8 /* PHEV */ = {
 			isa = PBXGroup;
 			children = (
+				257A84241E011F560043B54B /* TimerViewController.swift */,
 				2513F9B51DC9447E006B52B8 /* AppDelegate.swift */,
 				2513F9B71DC9447E006B52B8 /* ViewController.swift */,
 				2513F9B91DC9447E006B52B8 /* Main.storyboard */,
@@ -134,6 +139,7 @@
 				25001FE21E00A2FE0038D6B6 /* VehicleStatsPageViewController.swift */,
 				25001FE41E00ABFF0038D6B6 /* NovemberViewController.swift */,
 				25001FE61E00AC0C0038D6B6 /* DecemberViewController.swift */,
+				25001FEB1E010B660038D6B6 /* ViewCarViewController.swift */,
 			);
 			path = PHEV;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 			files = (
 				2513F9B81DC9447E006B52B8 /* ViewController.swift in Sources */,
 				250FC1A41DD52AAB0027213D /* VehicleViewController.swift in Sources */,
+				25001FEC1E010B660038D6B6 /* ViewCarViewController.swift in Sources */,
 				2513F9B61DC9447E006B52B8 /* AppDelegate.swift in Sources */,
 				250FC1AC1DD636CC0027213D /* LoginViewController.swift in Sources */,
 				25F9990D1DF0820200331AE4 /* TripTableViewCell.swift in Sources */,
@@ -260,6 +267,7 @@
 				25001FE11E009DCC0038D6B6 /* ControlViewController.swift in Sources */,
 				258E54B21DFE321200A56536 /* RatingReportViewController.swift in Sources */,
 				25001FE71E00AC0C0038D6B6 /* DecemberViewController.swift in Sources */,
+				257A84251E011F560043B54B /* TimerViewController.swift in Sources */,
 				25001FE51E00ABFF0038D6B6 /* NovemberViewController.swift in Sources */,
 				251E13481DF90510009178F2 /* TripContentViewController.swift in Sources */,
 				257A0EE41DFCAAE9001C8219 /* TripContainerViewController.swift in Sources */,

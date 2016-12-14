@@ -16,9 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //let navBackgroundImage:UIImage! = UIImage(named: "TopBarForPHEV-4.png")
+        //let navBackgroundImage:UIImage! = UIImage(named: "logout.png")
         //UINavigationBar.appearance().setBackgroundImage(navBackgroundImage, for: .default)
         //UINavigationBar.appearance().barStyle = .black
+        //UINavigationBar.appearance().tintColor = .white
+        
         return true
     }
     

@@ -33,9 +33,11 @@ class MapViewController: UIViewController {
         RouteView.layer.shadowRadius = 8
         RouteView.layer.shouldRasterize = true
         
+        //self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "logout.png"), for: .default)
         let starImage = UIImage(named: "Star-100.png")! as UIImage
         let starFilledImage = UIImage(named: "Star Filled-100.png")! as UIImage
         self.stars = [starImage, starFilledImage]
+        
         
         
         starIndex = toPass

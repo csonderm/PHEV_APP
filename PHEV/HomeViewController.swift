@@ -32,6 +32,7 @@ class HomeViewController: UIViewController {
         self.locks = [lockImage, unlockImage]
         LockButton.setBackgroundImage(self.locks[lockIndex], for: UIControlState.normal)
         LockLabel.text = "Click to Unlock"
+        
     }
     
     func addViewStyles() {
@@ -100,6 +101,10 @@ class HomeViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         // Show the navigation bar on other view controllers
         self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    func logout() {
+        self.performSegue(withIdentifier: "LogoutHomeSegue", sender: self)
     }
 
     /*
